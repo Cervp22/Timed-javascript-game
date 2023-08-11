@@ -38,6 +38,7 @@ body {
 .start-btn {
   width: 20%;
   visibility: inherit;
+  margin-left: 225px;
 }
 .controls {
   text-align: center;
@@ -56,4 +57,20 @@ body {
 
 .btn {
   visibility: hidden;
+}
+.submitbtn {
+  width: 30x;
+  height: 19px;
+  visibility: hidden;
+}
+.nameInput {
+  visibility: hidden;
+}
+.score-list {
+  margin-left: 250px;
+  display: none;
+}
+.restartbtn {
+  margin-left: 10px;
+  margin-top: 10px;
 }

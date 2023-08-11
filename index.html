@@ -7,24 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!----- Hers start's the container for view high scores button and timer-->
     <div class="container">
       <div>
-        <button class="highscore">View High Scores</button>
-        <h1 id="timer" class="timer">60</h1>
+        <button class="highscore" id="highscores">View High Scores</button>
+        <h1 id="timer" class="timer">40</h1>
+      </div>
+      <div id="restartbtn" class="restartbtn">
+        <input type="button" value="Restart Game.." onclick="reloadPage()">
       </div>
       <div id="question" class="question">
         <h1 id="question-title">Start Game</h1>
+        <input type="text" id="nameInput" class="nameInput" placeholder="Enter Name...">
+        <button id="submitbtn" class="submitbtn">Submit</button>
       </div>
+      <!----- the button layout and where most of the things will be chagning including the list of scores-->
       <div id="answer-buttons" class="btn-grid">
+        <ul id="score-list" class="score-list">
+        
+        </ul>
         <button id="btn1" class="btn"></button>
         <button id="btn2" class="btn"></button>
         <button id="btn3" class="btn"></button>
         <button id="btn4" class="btn"></button>
-      </div>
       <div class="controls">
         <button id="start-btn" class="start-btn">Start</button>
       </div>
     </div>
+    <!----- script starts here after the html has loaded -->
     <script src="script.js"></script>
   </body>
 </html>
